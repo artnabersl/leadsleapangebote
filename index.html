@@ -1,109 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fast Cash</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Upgrade & Surf Fast Cash</title>
+<style>
+  body {
+    background: #fff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+  }
 
-    .headline {
-      background-color: yellow;
-      color: #e22121;
-      font-size: 3em;
-      font-weight: bold;
-      padding: 40px 20px;
-    }
+  h1 {
+    color: #e22121;
+    background: #ffe600;
+    padding: 15px 0;
+    font-weight: 900;
+    user-select: none;
+  }
 
-    .cta {
-      margin-top: 30px;
-      font-size: 1.3em;
-      font-weight: bold;
-      color: #444;
-    }
+  /* Ads Container */
+  .ads-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+  }
 
-    .cta a {
-      display: inline-block;
-      margin-top: 15px;
-      text-decoration: none;
-      background-color: #ffe600;
-      color: #e22121;
-      padding: 15px 25px;
-      border-radius: 10px;
-      font-size: 1.2em;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
-    }
+  /* Single Ad */
+  .ads-container > div {
+    flex: 0 1 calc(33.33% - 40px);
+    min-width: 300px;
+    height: 350px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transform: scale(1.5);
+    transform-origin: center;
+    background: #f9f9f9;
+    border-radius: 12px;
+    overflow: hidden;
+  }
 
-    .cta a:hover {
-      background-color: #fff100;
-      transform: scale(1.07);
-    }
+  /* Countdown */
+  #countdown {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    margin: 20px 0 40px;
+  }
 
-    .ads-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin: 40px 0;
-    }
+  /* CTA Box */
+  .cta {
+    background: linear-gradient(to right, #ffe600, #ff3c3c);
+    color: #000;
+    padding: 25px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 4px solid #000;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    box-shadow: 0 0 20px red;
+    animation: pulse 1.5s infinite;
+  }
 
-    .ads-container > div {
-      flex: 0 1 calc(33.33% - 20px);
-      min-width: 220px;
-    }
-  </style>
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+  }
+
+  .cta strong {
+    color: green;
+  }
+
+  /* Rotating CTA Link */
+  .cta a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 28px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    box-shadow: 0 0 10px #28a745;
+    animation: flash 1.5s infinite;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta a:hover {
+    background-color: #1e7e34;
+    box-shadow: 0 0 20px #1e7e34;
+  }
+
+  @keyframes flash {
+    0%, 100% { background-color: #28a745; }
+    50% { background-color: #dc3545; }
+  }
+
+  /* Social Proof */
+  .social-proof {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+  }
+</style>
 </head>
 <body>
 
-  <div class="headline">WANT FAST CASH?!</div>
+<h1>WANT FAST CASH?!</h1>
 
-  <div class="cta">
-    One of the members just earned <strong style="color:green;">$195,706</strong><br>
-    <a href="https://artnabersl.github.io/keep/" target="_blank">Visit now for infos!</a>
+<div id="countdown">
+  ⚠️ Limited Offer Ends In: <span id="timer">10:00</span>
+</div>
+
+<div class="ads-container">
+  <div id="ll_widget_1"></div>
+  <div id="ll_widget_2"></div>
+  <div id="ll_widget_3"></div>
+  <div id="ll_widget_4"></div>
+  <div id="ll_widget_5"></div>
+  <div id="ll_widget_6"></div>
+  <div id="ll_widget_7"></div>
+  <div id="ll_widget_8"></div>
+  <div id="ll_widget_9"></div>
+  <div id="ll_widget_10"></div>
+</div>
+
+<div class="cta" id="cta-box">
+  One of the members just earned <strong>$195,706</strong> — <em>watch the video proof!</em><br />
+  <a href="https://llclick.com/p96wmwsd/myleadübersichtseiteverlinktmyleadwoadssind" target="_blank" id="cta-link">Loading...</a>
+  <div class="social-proof">
+    💬 <strong>12 people</strong> clicked in the last 30 minutes.<br />
+    🕐 Hurry, this offer is <strong>only live today!</strong>
   </div>
+</div>
 
-  <div class="ads-container">
-    <div id="ll_widget_1"></div>
-    <div id="ll_widget_2"></div>
-    <div id="ll_widget_3"></div>
-    <div id="ll_widget_4"></div>
-    <div id="ll_widget_5"></div>
-    <div id="ll_widget_6"></div>
-    <div id="ll_widget_7"></div>
-    <div id="ll_widget_8"></div>
-    <div id="ll_widget_9"></div>
-    <div id="ll_widget_10"></div>
-  </div>
+<script data-cfasync="false">
+  ll_r="sandyarta";ll_bc="#ffffff";ll_hc="#e22121";ll_tc="#555a69";ll_cc="#8d9aa6";ll_dc="#8891a8";ll_w="";ll_nf="0";ll_nc="1";ll_nh="0";ll_nm="0";ll_np="1";ll_pa="1";ll_nt="0";ll_wt="1";ll_fw="1";ll_n="10";ll_cl="";ll_s="w";
+</script>
+<script data-cfasync="false" src="https://w.leadsleap.com/js.js"></script>
 
-  <!-- LeadsLeap Script -->
-  <script data-cfasync="false">
-    ll_r = "sandyarta";
-    ll_bc = "#ffffff";
-    ll_hc = "#e22121";
-    ll_tc = "#555a69";
-    ll_cc = "#8d9aa6";
-    ll_dc = "#8891a8";
-    ll_nf = "0";
-    ll_nc = "1";
-    ll_nh = "0";
-    ll_nm = "0";
-    ll_np = "1";
-    ll_pa = "1";
-    ll_nt = "0";
-    ll_wt = "1";
-    ll_fw = "1";
-    ll_n = "10";
-    ll_cl = "";
-    ll_s = "w";
-  </script>
-  <script data-cfasync="false" src="https://w.leadsleap.com/js.js"></script>
+<script>
+  // Countdown Timer
+  let minutes = 10;
+  let seconds = 0;
+  const timerEl = document.getElementById("timer");
+
+  const countdownInterval = setInterval(() => {
+    if (seconds === 0) {
+      if (minutes === 0) {
+        clearInterval(countdownInterval);
+        timerEl.textContent = "EXPIRED";
+        return;
+      }
+      minutes--;
+      seconds = 59;
+    } else {
+      seconds--;
+    }
+    timerEl.textContent =
+      String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
+  }, 1000);
+
+  // Rotating CTA Links with video proof + psychotricks
+  const ctaLink = document.getElementById("cta-link");
+
+  const ctaTexts = [
+    {
+      text: "🚨 Limited Time! Watch the video proof & learn how thousands are earning now!",
+      href: "https://llclick.com/p96wmwsd/myleadübersichtseiteverlinktmyleadwoadssind"
+    },
+    {
+      text: "⚡ Join 132 live viewers watching real video proof — Don’t miss out!",
+      href: "https://llclick.com/p96wmwsd/myleadübersichtseiteverlinktmyleadwoadssind"
+    },
+    {
+      text: "💵 Watch video proof: How someone made $1,200+ in 24 hours — Click now!",
+      href: "https://llclick.com/p96wmwsd/myleadübersichtseiteverlinktmyleadwoadssind"
+    }
+  ];
+
+  let currentIndex = 0;
+
+  function rotateCTA() {
+    const current = ctaTexts[currentIndex];
+    ctaLink.textContent = current.text;
+    ctaLink.href = current.href;
+
+    currentIndex++;
+    if (currentIndex >= ctaTexts.length) currentIndex = 0;
+  }
+
+  rotateCTA(); // initial call
+  setInterval(rotateCTA, 10000); // rotate every 10 seconds
+</script>
 
 </body>
 </html>
