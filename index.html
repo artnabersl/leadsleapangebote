@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover The Online Money Making Secret</title>
+    <title>Discover The $100/Day Secret</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
         }
         
         body {
-            background: linear-gradient(135deg, var(--bg-color-1, #6a11cb), var(--bg-color-2, #2575fc));
+            background: linear-gradient(135deg, var(--color1, #4776E6), var(--color2, #8E54E9));
             color: white;
             min-height: 100vh;
             display: flex;
@@ -21,57 +21,45 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
-            transition: background 1.5s ease;
-        }
-        
-        .container {
-            max-width: 800px;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            transition: background 1.2s ease;
             text-align: center;
         }
         
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
-            color: var(--heading-color, #ffdd40);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            line-height: 1.3;
         }
         
         .subheading {
-            font-size: 1.5rem;
-            margin-bottom: 25px;
-            color: var(--subheading-color, #ff9d00);
-        }
-        
-        .benefits {
-            text-align: left;
-            margin: 30px 0;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-        }
-        
-        .benefits li {
-            margin-bottom: 10px;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
         }
         
         .timer {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin: 25px 0;
             padding: 15px;
             background: rgba(255, 255, 255, 0.15);
             border-radius: 10px;
-            color: var(--timer-color, #ff5252);
             font-weight: bold;
+            letter-spacing: 2px;
         }
         
         .form-container {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             padding: 25px;
             border-radius: 10px;
             margin-top: 20px;
@@ -88,68 +76,57 @@
             border-radius: 5px;
             font-size: 1rem;
             background: rgba(255, 255, 255, 0.9);
+            text-align: center;
         }
         
         button {
-            background: var(--button-color, #ff4081);
+            background: var(--btn-color, #FF512F);
+            background: linear-gradient(to right, var(--btn-color1, #FF512F), var(--btn-color2, #DD2476));
             color: white;
             border: none;
-            padding: 15px 30px;
+            padding: 16px;
             font-size: 1.2rem;
             border-radius: 5px;
             cursor: pointer;
             transition: all 0.3s;
             font-weight: bold;
             margin-top: 10px;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
         
         button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
         
         .disclaimer {
             margin-top: 20px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             opacity: 0.8;
         }
         
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            .subheading {
-                font-size: 1.2rem;
-            }
-            
-            .container {
-                padding: 20px;
-            }
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 id="main-heading">Who Else Want To Steal My $100 A Day Secret?</h1>
-        <p class="subheading" id="sub-heading">The Proven System That's Making People Money While They Sleep</p>
-        
-        <div class="benefits">
-            <h2>Here's What You'll Get:</h2>
-            <ul id="benefits-list">
-                <li>Step-by-step blueprint to make $100+ daily</li>
-                <li>No technical skills required - beginners welcome</li>
-                <li>Work from anywhere with just a laptop and internet</li>
-            </ul>
-        </div>
+        <div class="badge">Limited Time Offer</div>
+        <h1 id="main-heading">Who Else Wants To Discover My $100 A Day Secret?</h1>
+        <p class="subheading" id="sub-heading">The Proven System That's Helping People Generate Income Online</p>
         
         <div class="timer">
-            <p>Limited Time Offer - Ends In:</p>
-            <div id="countdown">15:00</div>
+            <div>Ends in: <span id="countdown">15:00</span></div>
         </div>
         
         <div class="form-container">
-            <h3>Enter Your Details To Get Instant Access</h3>
             <form method="post" action="https://www.sendsteed.com/subscribe/">
                 <div class="form-group">
                     <input name="n112051" required type="text" placeholder="Your Name">
@@ -160,149 +137,206 @@
                 <input type="hidden" name="lllid" value="112051">
                 <input type="hidden" name="lluid" value="sandyarta">
                 <input type="hidden" name="redirect" value="">
-                <input type="hidden" name="source" value="trafficadbar100version">
+                <input type="hidden" name="source" id="traffic-source" value="leadsleapproad100version">
+                <input type="hidden" name="lpversion" id="lp-version" value="1">
                 <button type="submit">GET INSTANT ACCESS NOW</button>
             </form>
-            <p class="disclaimer">We respect your privacy and will never share your information. Unsubscribe at any time.</p>
+            <p class="disclaimer">We respect your privacy. Unsubscribe at any time.</p>
         </div>
     </div>
 
     <script>
-        // Arrays mit verschiedenen Texten und Farben
+        // 50 verschiedene Textversionen
         const headings = [
-            "Who Else Want To Steal My $100 A Day Secret?",
+            "Who Else Wants To Discover My $100 A Day Secret?",
             "The $100/Day Blueprint They Don't Want You To Know",
             "How I Make $3,000+ Monthly Without Special Skills",
-            "Revealed: The Simple Trick To Online Earnings",
+            "Revealed: The Simple Strategy For Consistent Online Earnings",
             "This Method Generated $47,382 Last Month - See How",
-            "The Forbidden Technique For Quick Online Cash",
+            "The System That's Helping Beginners Earn Online",
             "Why Nobody Talks About This Money Making Secret",
-            "How To Create Passive Income With Zero Investment",
-            "The Untapped Goldmine: Earn Daily Without Working",
-            "My Unfair Advantage To Making Money Online"
+            "How To Create Passive Income With Minimal Effort",
+            "The Untapped Opportunity: Earn Daily From Home",
+            "My Advantage To Making Money Online Consistently",
+            "Discover The Secret To Earning $100 Daily Online",
+            "How Ordinary People Are Making $100+ Every Single Day",
+            "The Simple Technique That Makes Me $3,500 Monthly",
+            "This Little-Known Method Generated $52,117 Last Quarter",
+            "How To Bank $100 Daily With This Simple System",
+            "The Forbidden Secret To Easy Online Income Revealed",
+            "How I Went From Broke To $100/Day In 30 Days",
+            "The $100/Day Formula Big Gurus Don't Want Shared",
+            "This Automated System Makes $100/Day For Me",
+            "How To Make Your First $100 Online By Tomorrow",
+            "The Underground Method For Daily Online Income",
+            "My Unfair Advantage To Making Money While Sleeping",
+            "How To Create a $100/Day Income Stream Quickly",
+            "The Secret Online Trick That Makes $100 Daily",
+            "This Little-Known Loophole Makes Me $3,000 Monthly",
+            "How To Get Paid $100 Daily With Simple Tasks",
+            "The $100/Day Strategy That Requires No Experience",
+            "This Method Is So Effective It Feels Like Cheating",
+            "How To Generate $100 Bills Daily From Your Couch",
+            "The Secret System That Prints $100 Bills Daily",
+            "How To Unlock $100/Day Income In 24 Hours",
+            "The $100/Day Online Secret Almost Nobody Knows",
+            "This Technique Made Me $100/Day Without Trying",
+            "How To Collect $100 Daily Checks From Internet",
+            "The Simple Page That Makes Me $100 Every Day",
+            "How To Activate Your $100/Day Money Machine",
+            "The Secret Button That Deposits $100 Daily",
+            "How To Wake Up To $100 In Your Account Daily",
+            "The Unusual Trick That Makes $100/Day For Me",
+            "How To Secure $100 Daily For Life Online",
+            "The $100/Day Secret Hidden In Plain Sight",
+            "This Method Works Like A $100/Day ATM Machine",
+            "How To Become a $100/Day Money Magnet Online",
+            "The Simple Code That Unlocks $100 Daily Income",
+            "How To Get $100 Daily Deposits Automatically",
+            "The Secret Algorithm That Generates $100/Day",
+            "This Page Prints $100 Bills For Me Daily",
+            "How To Activate Your $100/Day Income Stream",
+            "The Magic Formula That Makes $100 Appear Daily",
+            "How To Unlock $100/Day In Passive Income"
         ];
         
         const subheadings = [
-            "The Proven System That's Making People Money While They Sleep",
+            "The Proven System That's Helping People Generate Income Online",
             "Join Thousands Who've Discovered This Hidden Method",
-            "Finally Revealed: The Technique Big Gurus Keep Hidden",
-            "No Special Skills Required - Start Earning Within Hours",
-            "This Changed Everything For Me - And It's Completely Legal",
-            "Why Work 9-5 When You Can Use This Simple 15-Minute Method?",
-            "The Shocking Truth About Online Money Making Revealed",
-            "How Ordinary People Are Cashing In With This Technique",
-            "This Method Is So Effective It Feels Like Cheating",
-            "Discover What The 1% Know About Online Income"
+            "Finally Revealed: The Technique Successful Marketers Use",
+            "No Special Skills Required - Start Earning Within 24 Hours",
+            "This Changed Everything For Me - And It's Completely Ethical",
+            "Why Work 9-5 When You Can Use This Simple Method?",
+            "The Truth About Sustainable Online Income Revealed",
+            "How Ordinary People Are Achieving Financial Freedom",
+            "This Approach Is So Effective It Feels Like An Advantage",
+            "Discover What Successful Online Earners Know",
+            "Learn how complete beginners are making $100+ daily from home",
+            "The step-by-step formula that requires no previous experience",
+            "See how this system can help you achieve financial freedom",
+            "How to create a consistent income stream working just 1 hour daily",
+            "The secret technique that helped me quit my day job",
+            "Why this method works when others fail - revealed",
+            "How to get started with zero investment and minimal effort",
+            "The little-known trick to making money online consistently",
+            "Why this opportunity won't be available forever",
+            "How to scale from $100 to $500+ per day effortlessly",
+            "The psychological trick that boosts your earnings overnight",
+            "How to get started with just a smartphone and internet",
+            "Why this method works in any economic situation",
+            "The hidden platform where buyers are waiting for you",
+            "How to outsource the work and still profit daily",
+            "The legal loophole that makes this so profitable",
+            "Why this method is recession-proof and always works",
+            "How to protect your earnings and maximize profits",
+            "The simple trick to double your results starting today",
+            "Why this works even if you've failed before with other methods",
+            "How to get paid without selling anything to anyone",
+            "The secret to automating the entire process step-by-step",
+            "Why this opportunity is limited to only a few people",
+            "How this system works while you sleep and travel",
+            "The exact method I use to make $3,500+ every month",
+            "Why now is the perfect time to start with this method",
+            "How to turn 15 minutes daily into full-time income",
+            "The one resource you already have that can make money",
+            "How to avoid common mistakes that cost you money",
+            "The tool that automates 90% of the work for you",
+            "How to create multiple income streams with one method",
+            "Why this is the simplest way to make money online",
+            "How to generate your first $100 within 24 hours",
+            "The secret traffic source nobody talks about",
+            "How to turn your spare time into a money-making machine",
+            "Why this method requires no technical knowledge",
+            "How to make money even while on vacation",
+            "The strategy that works in any niche or industry",
+            "Why this is perfect for students, parents and retirees",
+            "How to build a sustainable online income for life"
         ];
         
-        const benefits = [
-            [
-                "Step-by-step blueprint to make $100+ daily",
-                "No technical skills required - beginners welcome",
-                "Work from anywhere with just a laptop and internet"
-            ],
-            [
-                "Instant access to the complete money-making system",
-                "Proven techniques that work in 2023 and beyond",
-                "24/7 support from our community of earners"
-            ],
-            [
-                "How to generate your first $100 within 24 hours",
-                "The secret traffic source nobody talks about",
-                "Turn your spare time into a money-making machine"
-            ],
-            [
-                "The exact method I use to make $3,500+ monthly",
-                "Why this opportunity won't be available forever",
-                "How to scale from $100 to $500+ per day"
-            ],
-            [
-                "Avoid these common mistakes that cost you money",
-                "The tool that automates 90% of the work for you",
-                "How to create multiple income streams with one method"
-            ],
-            [
-                "The psychological trick that boosts conversions",
-                "How to get started with just $0 investment",
-                "Why this method works in any economic situation"
-            ],
-            [
-                "The hidden platform where buyers are waiting",
-                "How to outsource the work and still profit",
-                "The legal loophole that makes this so profitable"
-            ],
-            [
-                "Why this method is recession-proof",
-                "How to protect your earnings from taxes legally",
-                "The simple trick to double your results overnight"
-            ],
-            [
-                "The one resource you already have that can make money",
-                "How to turn 15 minutes daily into full-time income",
-                "Why this works even if you've failed before"
-            ],
-            [
-                "The secret to getting paid without selling anything",
-                "How to automate the entire process step-by-step",
-                "Why this opportunity is limited to only a few people"
-            ]
+        // 50 verschiedene Farbkombinationen
+        const colors = [
+            { color1: '#4776E6', color2: '#8E54E9', btn1: '#FF512F', btn2: '#DD2476' },
+            { color1: '#FF416C', color2: '#FF4B2B', btn1: '#7b4397', btn2: '#dc2430' },
+            { color1: '#56CCF2', color2: '#2F80ED', btn1: '#FF512F', btn2: '#DD2476' },
+            { color1: '#FF8008', color2: '#FFC837', btn1: '#4776E6', btn2: '#8E54E9' },
+            { color1: '#4CA1AF', color2: '#2C3E50', btn1: '#FF416C', btn2: '#FF4B2B' },
+            { color1: '#8E2DE2', color2: '#4A00E0', btn1: '#FF8008', btn2: '#FFC837' },
+            { color1: '#FF5F6D', color2: '#FFC371', btn1: '#4CA1AF', btn2: '#2C3E50' },
+            { color1: '#00c6ff', color2: '#0072ff', btn1: '#8E2DE2', btn2: '#4A00E0' },
+            { color1: '#f46b45', color2: '#eea849', btn1: '#FF5F6D', btn2: '#FFC371' },
+            { color1: '#800080', color2: '#ffc0cb', btn1: '#00c6ff', btn2: '#0072ff' },
+            { color1: '#00d2ff', color2: '#3a7bd5', btn1: '#f46b45', btn2: '#eea849' },
+            { color1: '#ff7e5f', color2: '#feb47b', btn1: '#800080', btn2: '#ffc0cb' },
+            { color1: '#2234DB', color2: '#009AFF', btn1: '#00d2ff', btn2: '#3a7bd5' },
+            { color1: '#654ea3', color2: '#eaafc8', btn1: '#ff7e5f', btn2: '#feb47b' },
+            { color1: '#3E5151', color2: '#DECBA4', btn1: '#2234DB', btn2: '#009AFF' },
+            { color1: '#396AFC', color2: '#2948FF', btn1: '#654ea3', btn2: '#eaafc8' },
+            { color1: '#F09819', color2: '#EDDE5D', btn1: '#3E5151', btn2: '#DECBA4' },
+            { color1: '#FF5858', color2: '#F09819', btn1: '#396AFC', btn2: '#2948FF' },
+            { color1: '#4481EB', color2: '#04BEFE', btn1: '#F09819', btn2: '#EDDE5D' },
+            { color1: '#FF9A8B', color2: '#FF6A88', btn1: '#FF5858', btn2: '#F09819' },
+            { color1: '#5D4157', color2: '#A8CABA', btn1: '#4481EB', btn2: '#04BEFE' },
+            { color1: '#F1F2B5', color2: '#135058', btn1: '#FF9A8B', btn2: '#FF6A88' },
+            { color1: '#C9FFBF', color2: '#FFAFBD', btn1: '#5D4157', btn2: '#A8CABA' },
+            { color1: '#003973', color2: '#E5E5BE', btn1: '#F1F2B5', btn2: '#135058' },
+            { color1: '#403A3E', color2: '#BE5869', btn1: '#C9FFBF', btn2: '#FFAFBD' },
+            { color1: '#4B79A1', color2: '#283E51', btn1: '#003973', btn2: '#E5E5BE' },
+            { color1: '#FFAFBD', color2: '#FFC3A0', btn1: '#403A3E', btn2: '#BE5869' },
+            { color1: '#2193b0', color2: '#6dd5ed', btn1: '#4B79A1', btn2: '#283E51' },
+            { color1: '#cc2b5e', color2: '#753a88', btn1: '#FFAFBD', btn2: '#FFC3A0' },
+            { color1: '#42275a', color2: '#734b6d', btn1: '#2193b0', btn2: '#6dd5ed' },
+            { color1: '#de6161', color2: '#2657eb', btn1: '#cc2b5e', btn2: '#753a88' },
+            { color1: '#ffd89b', color2: '#19547b', btn1: '#42275a', btn2: '#734b6d' },
+            { color1: '#FF5F6D', color2: '#FFC371', btn1: '#de6161', btn2: '#2657eb' },
+            { color1: '#556270', color2: '#FF6B6B', btn1: '#ffd89b', btn2: '#19547b' },
+            { color1: '#4ECDC4', color2: '#556270', btn1: '#FF5F6D', btn2: '#FFC371' },
+            { color1: '#FF6B6B', color2: '#556270', btn1: '#4ECDC4', btn2: '#556270' },
+            { color1: '#C06C84', color2: '#6C5B7B', btn1: '#FF6B6B', btn2: '#556270' },
+            { color1: '#F8B195', color2: '#F67280', btn1: '#C06C84', btn2: '#6C5B7B' },
+            { color1: '#6A9113', color2: '#141517', btn1: '#F8B195', btn2: '#F67280' },
+            { color1: '#2BC0E4', color2: '#EAECC6', btn1: '#6A9113', btn2: '#141517' },
+            { color1: '#134E5E', color2: '#71B280', btn1: '#2BC0E4', btn2: '#EAECC6' },
+            { color1: '#5C258D', color2: '#4389A2', btn1: '#134E5E', btn2: '#71B280' },
+            { color1: '#005C97', color2: '#363795', btn1: '#5C258D', btn2: '#4389A2' },
+            { color1: '#E65C00', color2: '#F9D423', btn1: '#005C97', btn2: '#363795' },
+            { color1: '#000428', color2: '#004e92', btn1: '#E65C00', btn2: '#F9D423' },
+            { color1: '#1488CC', color2: '#2B32B2', btn1: '#000428', btn2: '#004e92' },
+            { color1: '#BBd2c5', color2: '#536976', btn1: '#1488CC', btn2: '#2B32B2' },
+            { color1: '#9796f0', color2: '#fbc7d4', btn1: '#BBd2c5', btn2: '#536976' },
+            { color1: '#B79891', color2: '#94716B', btn1: '#9796f0', btn2: '#fbc7d4' },
+            { color1: '#ACB6E5', color2: '#86FDE8', btn1: '#B79891', btn2: '#94716B' }
         ];
         
-        const colors = {
-            bg: [
-                ['#6a11cb', '#2575fc'],
-                ['#ff4b1f', '#ff9068'],
-                ['#007adf', '#00ecbc'],
-                ['#ad5389', '#3c1053'],
-                ['#ff5f6d', '#ffc371'],
-                ['#4A00E0', '#8E2DE2'],
-                ['#5614B0', '#DBD65C'],
-                ['#0cebeb', '#20e3b2', '#29ffc6'],
-                ['#fc466b', '#3f5efb'],
-                ['#3E5151', '#DECBA4']
-            ],
-            heading: [
-                '#ffdd40', '#ff9d00', '#52ffb8', '#ff4dee', '#4df8ff',
-                '#ff5e7d', '#fffc40', '#eb4d4b', '#6ab04c', '#fda7df'
-            ],
-            subheading: [
-                '#ff9d00', '#ff5252', '#00d2ff', '#fffa65', '#17c0eb',
-                '#32ff7e', '#ffaf40', '#fffa65', '#18dcff', '#ffb8b8'
-            ],
-            timer: [
-                '#ff5252', '#ff3838', '#ff9f1a', '#fffa65', '#32ff7e',
-                '#18dcff', '#7d5fff', '#ff4d4d', '#ffaf40', '#fffa65'
-            ],
-            button: [
-                '#ff4081', '#ff3838', '#32ff7e', '#18dcff', '#7d5fff',
-                '#ff9f1a', '#ff4d4d', '#ffaf40', '#fffa65', '#ff9ff3'
-            ]
-        };
+        // URL-Parameter auslesen und Tracking-Parameter setzen
+        function setTrackingParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const source = urlParams.get('source') || 'leadsleapproad100version';
+            const lpversion = urlParams.get('lpversion') || '1';
+            
+            document.getElementById('traffic-source').value = source;
+            document.getElementById('lp-version').value = lpversion;
+            
+            // In der Konsole anzeigen zur Kontrolle
+            console.log('Traffic Source:', source);
+            console.log('LP Version:', lpversion);
+        }
         
         // Zufällige Auswahl von Texten und Farben
         function randomizeContent() {
-            const randomIndex = Math.floor(Math.random() * 10);
+            const randomIndex = Math.floor(Math.random() * 50);
             
             // Setze Texte
             document.getElementById('main-heading').textContent = headings[randomIndex];
             document.getElementById('sub-heading').textContent = subheadings[randomIndex];
             
-            // Setze Benefits
-            const benefitsList = document.getElementById('benefits-list');
-            benefitsList.innerHTML = '';
-            benefits[randomIndex].forEach(benefit => {
-                const li = document.createElement('li');
-                li.textContent = benefit;
-                benefitsList.appendChild(li);
-            });
-            
             // Setze Farben
-            document.documentElement.style.setProperty('--bg-color-1', colors.bg[randomIndex][0]);
-            document.documentElement.style.setProperty('--bg-color-2', colors.bg[randomIndex][1]);
-            document.documentElement.style.setProperty('--heading-color', colors.heading[randomIndex]);
-            document.documentElement.style.setProperty('--subheading-color', colors.subheading[randomIndex]);
-            document.documentElement.style.setProperty('--timer-color', colors.timer[randomIndex]);
-            document.documentElement.style.setProperty('--button-color', colors.button[randomIndex]);
+            document.documentElement.style.setProperty('--color1', colors[randomIndex].color1);
+            document.documentElement.style.setProperty('--color2', colors[randomIndex].color2);
+            document.documentElement.style.setProperty('--btn-color1', colors[randomIndex].btn1);
+            document.documentElement.style.setProperty('--btn-color2', colors[randomIndex].btn2);
+            
+            // Setze LP Version für Tracking
+            document.getElementById('lp-version').value = (randomIndex + 1).toString();
         }
         
         // Timer-Funktionalität
@@ -325,6 +359,9 @@
         
         // Beim Laden der Seite
         window.onload = function () {
+            // Tracking-Parameter setzen
+            setTrackingParams();
+            
             // Zufällige Inhalte laden
             randomizeContent();
             
