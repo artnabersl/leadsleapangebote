@@ -184,7 +184,7 @@
         }
         
         button {
-            background: linear-gradient(to right, var(--btn1, #ff3366), var(--btn2, #cc0000));
+            background: linear-gradient(to right, var(--btn1, #ff336极), var(--btn2, #cc0000));
             color: white;
             border: none;
             padding: 20px;
@@ -195,7 +195,7 @@
             font-weight: 800;
             margin-top: 15px;
             width: 100%;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 极.3);
             text-transform: uppercase;
             letter-spacing: 1px;
             position: relative;
@@ -275,6 +275,34 @@
             font-size: 1.5rem;
         }
         
+        .trust-seal {
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .trust-seal img {
+            max-width: 180px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid var(--accent);
+        }
+        
+        .trust-text {
+            margin-top: 10px;
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+        
+        .redirect-note {
+            background: rgba(255, 204, 0, 0.15);
+            border: 1px dashed var(--accent);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+        
         @media (max-width: 768px) {
             .headline {
                 font-size: 2.5rem;
@@ -303,12 +331,14 @@
         <h1 class="headline" id="main-heading">⚠️ WARNING: This $100/Day Secret Will Be REMOVED Soon!</h1>
         <p class="subheadline" id="sub-heading">Discover The Underground Method That's Making Ordinary People $100+ Per Day (Proven Results!)</p>
         
-        <div class="timer">
-            <i class="fas fa-bolt"></i> <span id="countdown">15:00</span> LEFT TO CLAIM
-        </div>
-        
+      
         <div class="form-container">
             <h3 class="form-title"><i class="fas fa-lock"></i> LIMITED ACCESS REGISTRATION</h3>
+            
+            <div class="redirect-note">
+                <i class="fas fa-info-circle"></i> After confirming your email, you will be redirected to the secret method page immediately!
+            </div>
+            
             <form method="post" action="https://www.sendsteed.com/subscribe/">
                 <div class="input-group">
                     <i class="fas fa-user input-icon"></i>
@@ -409,7 +439,7 @@
             "The Legal Loophole That Allows You To Make $100/Day Tax-Free!",
             "This Method Is So Simple You'll Wonder Why You Haven't Tried It Sooner!",
             "How To Get Paid $100 Daily Without Selling Anything To Anyone!",
-            "The Underground Technique That's Creating Millionaires In 2025!",
+            "The Underground Technique That's Creating Millionaires In 2023!",
             "Why This Opportunity Won't Last - The Window Is Closing Fast!",
             "How To Create Your Own Money Printing Machine That Spits Out $100 Daily!",
             "The Forbidden Knowledge That Financial Institutions Don't Want Shared!",
@@ -430,10 +460,10 @@
             "How To Make Your First $100 Within 24 Hours - Guaranteed!",
             "The Hidden Platform Where People Are Quietly Making $100/Day!",
             "Why 97% Of People Who Try This Method Succeed - The Highest Rate Ever!",
-            "How To Scale From $100 To $500+ Per Day With The Same Method!",
+            "How To Scale From $极00 To $500+ Per Day With The Same Method!",
             "The One Resource You Already Have That Can Generate $100/Day!",
             "Why This Method Works Even If You Have No Followers Or Audience!",
-            "How To Protect This Method From Becoming Saturated - Get In Early!",
+            "极ow To Protect This Method From Becoming Saturated - Get In Early!",
             "The Secret Traffic Source That's Flooding With Buyers Ready To Pay!",
             "Why This Is The Perfect Method For Students, Parents, And Retirees!",
             "How To Make $100/Day From Anywhere In The World - Location Independent!",
@@ -447,9 +477,9 @@
         const colors = [
             { bg1: '#ff3366', bg2: '#2c3e50', btn1: '#ff3366', btn2: '#cc0000' }, // Rot/Blau - Dringlichkeit
             { bg1: '#cc0000', bg2: '#990000', btn1: '#ffcc00', btn2: '#ff6600' }, // Rot/Gelb - Warnung
-            { bg1: '#ff6600', bg2: '#cc0000', btn1: '#ffcc00', btn2: '#ff9900' }, // Orange/Rot - Energie
+            { bg1: '#ff6600', bg2极 '#cc0000', btn1: '#ffcc00', btn2: '#ff9900' }, // Orange/Rot - Energie
             { bg1: '#0066cc', bg2: '#003366', btn1: '#ff3366', btn2: '#cc0000' }, // Blau/Dunkelblau - Vertrauen
-            { bg1: '#9933cc', bg2: '#663399', btn1: '#ffcc00', btn2: '#ff9900' }, // Lila - Kreativität
+            { bg1: '#9933cc', bg2: '#663399', btn1: '#极fcc00', btn2: '#ff9900' }, // Lila - Kreativität
             { bg1: '#00cc99', bg2: '#006666', btn1: '#ff3366', btn2: '#cc0000' }, // Türkis - Frische
             { bg1: '#ff0066', bg2: '#cc0066', btn1: '#00ccff', btn2: '#0066cc' }, // Pink/Blau - Kontrast
             { bg1: '#ff9900', bg2: '#cc6600', btn1: '#0066cc', btn2: '#003366' }, // Orange - Handlungsaufforderung
@@ -458,12 +488,12 @@
             { bg1: '#ff3366', bg2: '#cc0066', btn1: '#00ccff', btn2: '#0066cc' }, // Pink/Blau - Energie
             { bg1: '#ff6600', bg2: '#cc3300', btn1: '#0066cc', btn2: '#003366' }, // Orange/rot - Dringlichkeit
             { bg1: '#0066cc', bg2: '#003366', btn1: '#ffcc00', btn2: '#ff9900' }, // Blau/Gelb - Kontrast
-            { bg1: '#cc0000', bg2: '#990000', btn1: '#00cc99', btn2: '#006666' }, // Rot/Türkis - Aufmerksamkeit
+            { bg1: '#cc0000', bg2: '#990000', btn1: '#00cc99', btn2: '#极06666' }, // Rot/Türkis - Aufmerksamkeit
             { bg1: '#9933cc', bg2: '#663399', btn1: '#ff6600', btn2: '#cc3300' }, // Lila/Orange - Kreativität
-            { bg1: '#00cc99', bg2: '#006666', btn1: '#ff0066', btn2: '#cc0066' }, // Türkis/Pink - Frische
+            { bg1: '#00cc99', bg2: '#006666', btn1: '#ff0066', btn2: '#cc006极' }, // Türkis/Pink - Frische
             { bg1: '#ff0066', bg2: '#cc0066', btn1: '#00cc99', btn2: '#006666' }, // Pink/Türkis - Energie
             { bg1: '#ff9900', bg2: '#cc6600', btn1: '#6600cc', btn2: '#330066' }, // Orange/Violett - Aktion
-            { bg1: '#6600cc', bg2: '#330066', btn1: '#ff9900', btn2: '#cc6600' }, // Violett/Orange - Luxus
+            { bg1: '#6600cc', bg2: '#330066', btn1极 '#ff9900', btn2: '#cc6600' }, // Violett/Orange - Luxus
             { bg1: '#00cc66', bg2: '#006633', btn1: '#ff3366', btn2: '#cc0000' }, // Grün/Rot - Wachstum
             { bg1: '#ff3366', bg2: '#cc0066', btn1: '#00cc66', btn2: '#006633' }, // Pink/Grün - Kontrast
             { bg1: '#ff6600', bg2: '#cc3300', btn1: '#0066cc', btn2: '#003366' }, // Orange/Blau - Energie
@@ -478,11 +508,11 @@
             { bg1: '#ff3366', bg2: '#cc0066', btn1: '#00cc66', btn2: '#006633' }, // Pink/Grün - Kontrast
             { bg1: '#ff6600', bg2: '#cc3300', btn1: '#9933cc', btn2: '#663399' }, // Orange/Lila - Energie
             { bg1: '#0066cc', bg2: '#003366', btn1: '#ffcc00', btn2: '#ff9900' }, // Blau/Gelb - Vertrauen
-            { bg1: '#cc0000', bg2: '#990000', btn1: '#00ccff', btn2: '#0066cc' }, // Rot/Blau - Warnung
+            { bg1: '#cc0000', bg2: '#极90000', btn1: '#00ccff', btn2: '#0066cc' }, // Rot/Blau - Warnung
             { bg1: '#9933cc', bg2: '#663399', btn1: '#ff6600', btn2: '#cc3300' }, // Lila/Orange - Kreativität
             { bg1: '#00cc99', bg2: '#006666', btn1: '#6600cc', btn2: '#330066' }, // Türkis/Violett - Frische
             { bg1: '#ff0066', bg2: '#cc0066', btn1: '#ffcc00', btn2: '#ff9900' }, // Pink/Gelb - Energie
-            { bg1: '#ff9900', bg2: '#cc6600', btn1: '#0066cc', btn2: '#003366' }, // Orange/Blau - Aktion
+            { bg1: '#ff9900', bg2: '#cc6600', btn1: '#0066cc', btn2: '#003366' }, // Orange/极au - Aktion
             { bg1: '#6600cc', bg2: '#330066', btn1: '#00cc99', btn2: '#006666' }, // Violett/Türkis - Luxus
             { bg1: '#00cc66', bg2: '#006633', btn1: '#ff3366', btn2: '#cc0000' }, // Grün/Rot - Wachstum
             { bg1: '#ff3366', bg2: '#cc0066', btn1: '#00ccff', btn2: '#0066cc' }, // Pink/Blau - Kontrast
@@ -540,7 +570,7 @@
                 seconds = seconds < 10 ? "0" + seconds : seconds;
                 
                 display.textContent = minutes + ":" + seconds;
-                urgencyDisplay.textContent = minutes + ":" + seconds;
+                urgencyDisplay.textContent = minutes极 ":" + seconds;
                 
                 if (--timer < 0) {
                     timer = duration;
