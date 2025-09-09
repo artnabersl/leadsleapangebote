@@ -587,6 +587,557 @@
             overflow-x: hidden;
         }
         
+        .red-bar {
+            background: var(--urgency);
+            height: 8px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            border: 2px solid var(--accent);
+            animation: containerGlow 3s infinite alternate;
+        }
+        
+        @keyframes containerGlow {
+            0% { box-shadow: 0 0 20px rgba(255, 204, 0, 0.5); }
+            100% { box-shadow: 0 0 30px rgba(255, 204, 0, 0.8); }
+        }
+        
+        @keyframes pulse {
+            0% { background-color: #ff0000; }
+            50% { background-color: #ff5252; }
+            100% { background-color: #ff0000; }
+        }
+        
+        .headline {
+            font-size: 3.2rem;
+            font-weight: 900;
+            margin: 20px 0;
+            line-height: 1.2;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+            color: var(--accent);
+            animation: headlineFocus 5s ease-in-out infinite;
+        }
+        
+        @keyframes headlineFocus {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        
+        .subheadline {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+        }
+        
+        .trust-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+        }
+        
+        .trust-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .trust-subtext {
+            font-size: 1.2rem;
+            color: #ddd;
+            margin-top: 5px;
+        }
+        
+        .timer {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            color: var(--urgency);
+            letter-spacing: 3px;
+            border: 2px solid var(--urgency);
+            animation: timerPulse 1s infinite;
+        }
+        
+        @keyframes timerPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+           100% { transform: scale(1); }
+        }
+        
+        .form-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border: 1px solid var(--accent);
+        }
+        
+        .form-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--accent);
+            font-weight: 700;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .input-icon {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            color: #777;
+        }
+        
+        input {
+            width: 100%;
+            padding: 18px 18px 18px 50px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        input:focus {
+            border-color: var(--accent);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.3);
+            background: white;
+        }
+        
+        button {
+            background: linear-gradient(to right, var(--btn1, #ff3366), var(--btn2, #cc0000));
+            color: white;
+            border: none;
+            padding: 20px;
+            font-size: 1.4rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 800;
+            margin-top: 15px;
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        button:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(45deg);
+            transition: all 0.6s;
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+        
+        button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        .guarantee {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+            color: #ddd;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .guarantee i {
+            color: var(--accent);
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+        
+        .disclaimer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #aaa;
+            line-height: 1.5;
+        }
+        
+        .confirmation-note {
+            background: rgba(0, 200, 0, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #00cc00;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 2.5rem;
+            }
+            
+            .subheadline {
+                font-size: 1.5rem;
+            }
+            
+            .timer {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .trust-text {
+                font-size: 1.5rem;
+            }
+            
+            .trust-subtext {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="red-bar"></div>
+
+    <div class="container">
+        <h1 class="headline" id="main-heading">⚠️ WARNING: This $100/Day Secret Will Be REMOVED Soon!</h1>
+        <p class="subheadline" id="sub-heading">Discover The Underground Method That's Making Ordinary People $100+ Per Day (Proven Results!)</p>
+        
+        <div class="trust-section">
+            <div class="trust-text">Barry</div>
+            <div class="trust-subtext">25 years affiliate experience</div>
+        </div>
+        
+        <div class="timer">
+            <i class="fas fa-bolt"></i> <span id="countdown">15:00</span> LEFT TO CLAIM
+        </div>
+        
+        <div class="form-container">
+            <h3 class="form-title"><i class="fas fa-lock"></i> LIMITED ACCESS REGISTRATION</h3>
+            
+            <div class="confirmation-note">
+                <i class="fas fa-check-circle"></i> After confirming your email, you will be redirected to the secret page!
+            </div>
+            
+            <form method="post" action="https://www.sendsteed.com/subscribe/">
+                <div class="input-group">
+                    <i class="fas fa-user input-icon"></i>
+                    <input name="n112051" required type="text" placeholder="Your Full Name">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input name="e112051" required type="email" placeholder="your@email.com">
+                </div>
+                <input type="hidden" name="lllid" value="112051">
+                <input type="hidden" name="lluid" value="sandyarta">
+                <input type="hidden" name="redirect" value="">
+                <input type="hidden" name="source" id="traffic-source" value="leadsleapproad100version">
+                <input type="hidden" name="lpversion" id="lp-version" value="1">
+                <button type="submit"><i class="fas fa-arrow-right"></i> YES! GIVE ME ACCESS NOW</button>
+            </form>
+            
+            <div class="guarantee">
+                <i class="fas fa-shield-alt"></i>
+                <p>Your information is 100% secure. We respect your privacy and will never share your details.</p>
+            </div>
+        </div>
+        
+        <p class="disclaimer">Disclaimer: Individual results may vary. This is not a "get rich quick" scheme. This method requires effort and consistency to achieve results. The examples shown are for illustrative purposes only.</p>
+    </div>
+
+    <script>
+        // 50 verschiedene extrem aufmerksamstarke Texte
+        const headings = [
+            "⚠️ WARNING: This $100/Day Secret Will Be REMOVED Soon!",
+            "🚀 SHOCKING: How I Make $100/Day Online (See Proof!)",
+            "💸 $100 DAILY: The Secret Method They're Trying To BAN!",
+            "🤫 Forbidden Technique Makes $100/Day (Legal Loophole!)",
+            "🔥 EXPOSED: The $100/Day Secret Banks Don't Want You To Know!",
+            "💎 $100/DAY BLUEPRINT: How To Create Passive Income Fast!",
+            "⚡ URGENT: This $100/Day Method Is Being Patched Soon!",
+            "💰 PROVEN: How Complete Beginners Make $100/Day Online!",
+            "🌪️ CONTROVERSIAL: The $100/Day Method That's Going Viral!",
+            "📈 $100/DAY SYSTEM: How To Replace Your 9-5 Income!",
+            "🎯 WARNING: This $100/Day Trick Will BLOW Your Mind!",
+            "💣 $100/DAY BOMBSHELL: The Secret They Silenced For Years!",
+            "💥 REVEALED: How To Make $100/Day While Sleeping!",
+            "🚨 LAST CHANCE: Get The $100/Day Secret Before It's Gone!",
+            "✨ MIRACLE METHOD: How I Make $100/Day With Zero Experience!",
+            "🤑 $100/DAY: The Underground Technique Going Mainstream!",
+            "🤯 MINDBLOWING: This $100/Day Method Defies All Logic!",
+            "🔓 UNLOCKED: The $100/Day Secret Hidden In Plain Sight!",
+            "🌶️ SPICY: The $100/Day Method That's Too Good To Be Legal!",
+            "⚓ ANCHOR METHOD: How To Secure $100/Day For Life!",
+            "🎪 CRAZY: How This $100/Day Method Is Changing Lives!",
+            "🔑 SECRET KEY: Unlock The $100/Day Income Vault!",
+            "💡 GENIUS: The $100/Day Method Nobody Talks About!",
+            "🌈 MAGIC: How To Manifest $100/Day With This Technique!",
+            "🦄 UNICORN METHOD: The Rarest $100/Day Secret Online!",
+            "🧨 EXPLOSIVE: This $100/Day Method Is Taking Over!",
+            "🧠 BRILLIANT: The $100/Day Strategy That Requires No Brain!",
+            "🎰 JACKPOT: How To Hit $100/Day Consistently!",
+            "⚓ STEADY: The $100/Day Method That Works In Any Economy!",
+            "🏆 WINNER: How To Make $100/Day Like A Champion!",
+            "🔝 TOP SECRET: The $100/Day Method Elite Use!",
+            "💣 DYNAMITE: This $100/Day Method Blows Everything Away!",
+            "🚂 TRAIN: Get On The $100/Day Money Train Now!",
+            "🎲 LUCKY: How To Get $100/Day Without Luck!",
+            "📊 PROVEN: The $100/Day Method With 97% Success Rate!",
+            "🛡️ PROTECTED: The $100/Day Method That's Crisis-Proof!",
+            "🌪️ STORM: This $100/Day Method Is Sweeping The Nation!",
+            "🎁 GIFT: How To Unwrap $100/Day For Life!",
+            "🔋 POWER: The $100/Day Method That Energizes Your Wallet!",
+            "🏹 TARGET: How To Hit $100/Day Every Single Time!",
+            "🧲 MAGNET: The $100/Day Method That Attracts Money!",
+            "⚖️ BALANCED: The $100/Day Method For Stable Income!",
+            "🕶️ COVERT: The $100/Day Method They Can't Track!",
+            "🧪 SCIENTIFIC: The $100/Day Method Backed By Data!",
+            "🛒 EASY: The $100/Day Method That's Simple To Use!",
+            "📱 MOBILE: How To Make $100/Day From Your Phone!",
+            "💻 AUTOMATED: The $100/Day Method That Runs Itself!",
+            "🌍 GLOBAL: The $100/Day Method That Works Worldwide!",
+            "⏰ TIMELESS: The $100/Day Method That Never Expires!",
+            "❤️ LOVED: The $100/Day Method With 4,287+ Success Stories!"
+        ];
+        
+        const subheadings = [
+            "Discover The Underground Method That's Making Ordinary People $100+ Per Day (Proven Results!)",
+            "Join 4,287+ People Who Are Already Banking $100+ Daily With This Simple Technique!",
+            "This Method Is So Effective It's Being Banned In Several Countries - Get It NOW!",
+            "See How Complete Beginners Are Using This Secret To Make $3,000+ Monthly!",
+            "Warning: This Method May Extreme Wealth If Applied Correctly!",
+            "The Step-By-Step Formula That Requires No Experience - Just Follow The Steps!",
+            "Why Are Banks Terrified Of This Method? Discover The Shocking Truth!",
+            "How To Activate Your $100/Day Money Machine In The Next 15 Minutes!",
+            "This Page Will Self-Destruct In 15 Minutes - Get The Secret While You Can!",
+            "The Method That's Too Powerful To Ignore - Your Financial Freedom Starts Here!",
+            "See Real Proof From Real People - This Isn't Another Scam!",
+            "How To Bypass The System And Extract $100 Daily From The Internet!",
+            "The Secret Algorithm That Generates $100 Bills Automatically!",
+            "Why This Method Works Even If You've Failed With Everything Else!",
+            "How To Unlock The Hidden $100/Day Income Stream Nobody Talks About!",
+            "The Legal Loophole That Allows You To Make $100/Day Tax-Free!",
+            "This Method Is So Simple You'll Wonder Why You Haven't Tried It Sooner!",
+            "How To Get Paid $100 Daily Without Selling Anything To Anyone!",
+            "The Underground Technique That's Creating Millionaires In 2023!",
+            "Why This Opportunity Won't Last - The Window Is Closing Fast!",
+            "How To Create Your Own Money Printing Machine That Spits Out $100 Daily!",
+            "The Forbidden Knowledge That Financial Institutions Don't Want Shared!",
+            "See How This Method Turned A Broke Student Into A Money Magnet!",
+            "How To Secure $100/Day For Life With This Little-Known Technique!",
+            "The Secret Button That Deposits $100 Into Your Account Daily!",
+            "Why This Method Works In Any Economic Situation - Recession Proof!",
+            "How To Make $100/Day Without Technical Skills Or Special Knowledge!",
+            "The Psychological Trick That Forces Money To Flow Into Your Pocket!",
+            "How To Automate This Method So It Makes Money While You Sleep!",
+            "The Simple Formula That's Been Scientifically Proven To Make $100/Day!",
+            "Why This Is The Last Time You'll See This Offer - Don't Miss Out!",
+            "How To Get Started With Zero Investment - Risk Free!",
+            "The Secret Society That's Been Using This Method For Years - Now Revealed!",
+            "How To Turn 15 Minutes Daily Into $100 Bills Consistently!",
+            "The Method That's So Effective It Feels Like Cheating The System!",
+            "Why This Is The Only Money-Making Method You'll Ever Need!",
+            "How To Make Your First $100 Within 24 Hours - Guaranteed!",
+            "The Hidden Platform Where People Are Quietly Making $100/Day!",
+            "Why 97% Of People Who Try This Method Succeed - The Highest Rate Ever!",
+            "How To Scale From $100 To $500+ Per Day With The Same Method!",
+            "The One Resource You Already Have That Can Generate $100/Day!",
+            "Why This Method Works Even If You Have No Followers Or Audience!",
+            "How To Protect This Method From Becoming Saturated - Get In Early!",
+            "The Secret Traffic Source That's Flooding With Buyers Ready To Pay!",
+            "Why This Is The Perfect Method For Students, Parents, And Retirees!",
+            "How To Make $100/Day From Anywhere In The World - Location Independent!",
+            "The Technique That's Been Kept Secret By Top Earners - Until Now!",
+            "Why This Method Is Immune To Algorithm Changes And Market Shifts!",
+            "How To Outsource This Method And Still Make $100/Day Passively!",
+            "The Ultimate Money-Making Secret That Tops All Others - Revealed!"
+        ];
+        
+        // 50 verschiedene Farbkombinationen mit psychologischen Wirkungen
+        const colors = [
+            { bg1: '#ff3366', bg2: '#2c3e50', btn1: '#ff3366', btn2: '#cc0000' }, // Rot/Blau - Dringlichkeit
+            { bg1: '#cc0000', bg2: '#990000', btn1: '#ffcc00', btn2: '#ff6600' }, // Rot/Gelb - Warnung
+            { bg1: '#ff6600', bg2: '#cc0000', btn1: '#ffcc00', btn2: '#ff9900' }, // Orange/Rot - Energie
+            { bg1: '#0066cc', bg2: '#003366', btn1: '#ff3366', btn2: '#cc0000' }, // Blau/Dunkelblau - Vertrauen
+            { bg1: '#9933cc', bg2: '#663399', btn1: '#ffcc00', btn2: '#ff9900' }, // Lila - Kreativität
+            { bg1: '#00cc99', bg2: '#006666', btn1: '#ff3366', btn2: '#cc0000' }, // Türkis - Frische
+            { bg1: '#ff0066', bg2: '#cc0066', btn1: '#00ccff', btn2: '#0066cc' }, // Pink/Blau - Kontrast
+            { bg1: '#ff9900', bg2: '#cc6600', btn1: '#0066cc', btn2: '#003366' }, // Orange - Handlungsaufforderung
+            { bg1: '#6600cc', bg2: '#330066', btn1: '#ffcc00', btn2: '#ff9900' }, // Violett - Luxus
+            { bg1: '#00cc66', bg2: '#006633', btn1: '#ff3366', btn2: '#cc0000' }, // Grün - Wachstum
+            { bg1: '#ff3366', bg2: '#cc0066', btn1: '#00ccff', btn2: '#0066cc' }, // Pink/Blau - Energie
+            { bg1: '#ff6600', bg2: '#cc3300', btn1: '#0066cc', btn2: '#003366' }, // Orange/rot - Dringlichkeit
+            { bg1: '#0066cc', bg2: '#003366', btn1: '#ffcc00', btn2: '#ff9900' }, // Blau/Gelb - Kontrast
+            { bg1: '#cc0000', bg2: '#990000', btn1: '#00cc99', btn2: '#006666' }, // Rot/Türkis - Aufmerksamkeit
+            { bg1: '#9933cc', bg2: '#663399', btn1: '#ff6600', btn2: '#cc3300' }, // Lila/Orange - Kreativität
+            { bg1: '#00cc99', bg2: '#006666', btn1: '#ff0066', btn2: '#cc0066' }, // Türkis/Pink - Frische
+            { bg1: '#ff0066', bg2: '#cc0066', btn1: '#00cc99', btn2: '#006666' }, // Pink/Türkis - Energie
+            { bg1: '#ff9900', bg2: '#cc6600', btn1: '#6600cc', btn2: '#330066' }, // Orange/Violett - Aktion
+            { bg1: '#6600cc', bg2: '#330066', btn1: '#ff9900', btn2: '#cc6600' }, // Violett/Orange - Luxus
+            { bg1: '#00cc66', bg2: '#006633', btn1: '#ff3366', btn2: '#cc0000' }, // Grün/Rot - Wachstum
+            { bg1: '#ff3366', bg2: '#cc0066', btn1: '#00cc66', btn2: '#006633' }, // Pink/Grün - Kontrast
+            { bg1: '#ff6600', bg2: '#cc3300', btn1: '#9933cc', btn2: '#663399' }, // Orange/Lila - Energie
+            { bg1: '#0066cc', bg2: '#003366', btn1: '#ffcc00', btn2: '#ff9900' }, // Blau/Gelb - Vertrauen
+            { bg1: '#cc0000', bg2: '#990000', btn1: '#00ccff', btn2: '#0066cc' }, // Rot/Blau - Warnung
+            { bg1: '#9933cc', bg2: '#663399', btn1: '#ff6600', btn2: '#cc3300' }, // Lila/Orange - Kreativität
+            { bg1: '#00cc99', bg2: '#006666', btn1: '#6600cc', btn2: '#330066' }, // Türkis/Violett - Frische
+            { bg1: '#ff0066', bg2: '#cc0066', btn1: '#ffcc00', btn2: '#ff9900' }, // Pink/Gelb - Energie
+            { bg1: '#ff9900', bg2: '#cc6600', btn1: '#0066cc', btn2: '#003366' }, // Orange/Blau - Aktion
+            { bg1: '#6600cc', bg2: '#330066', btn1: '#00cc99', btn2: '#006666' }, // Violett/Türkis - Luxus
+            { bg1: '#00cc66', bg2: '#006633', btn1: '#ff3366', btn2: '#cc0000' }, // Grün/Rot - Wachstum
+            { bg1: '#ff3366', bg2: '#cc0066', btn1: '#00ccff', btn2: '#0066cc' }, // Pink/Blau - Kontrast
+            { bg1: '#ff6600', bg2: '#cc3300', btn1: '#cc0000', btn2: '#990000' }, // Orange/Rot - Energie
+            { bg1: '#0066cc', bg2: '#003366', btn1: '#ff0066', btn2: '#cc0066' }, // Blau/Pink - Vertrauen
+            { bg1: '#cc0000', bg2: '#990000', btn1: '#00cc66', btn2: '#006633' }, // Rot/Grün - Warnung
+            { bg1: '#9933cc', bg2: '#663399', btn1: '#ffcc00', btn2: '#ff9900' }, // Lila/Gelb - Kreativität
+            { bg1: '#00cc99', bg2: '#006666', btn1: '#9933cc', btn2: '#663399' }, // Türkis/Lila - Frische
+            { bg1: '#ff0066', bg2: '#cc0066', btn1: '#ff6600', btn2: '#cc3300' }, // Pink/Orange - Energie
+            { bg1: '#ff9900', bg2: '#cc6600', btn1: '#00ccff', btn2: '#0066cc' }, // Orange/Blau - Aktion
+            { bg1: '#6600cc', bg2: '#330066', btn1: '#ff3366', btn2: '#cc0000' }, // Violett/Rot - Luxus
+            { bg1: '#00cc66', bg2: '#006633', btn1: '#ffcc00', btn2: '#ff9900' }  // Grün/Gelb - Wachstum
+        ];
+        
+        // URL-Parameter auslesen und Tracking-Parameter setzen
+        function setTrackingParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const source = urlParams.get('source') || 'leadsleapproad100version';
+            const lpversion = urlParams.get('lpversion') || '1';
+            
+            document.getElementById('traffic-source').value = source;
+            document.getElementById('lp-version').value = lpversion;
+            
+            // In der Konsole anzeigen zur Kontrolle
+            console.log('Traffic Source:', source);
+            console.log('LP Version:', lpversion);
+        }
+        
+        // Zufällige Auswahl von Texten und Farben
+        function randomizeContent() {
+            const randomIndex = Math.floor(Math.random() * 50);
+            
+            // Setze Texte
+            document.getElementById('main-heading').textContent = headings[randomIndex];
+            document.getElementById('sub-heading').textContent = subheadings[randomIndex];
+            
+            // Setze Farben
+            document.documentElement.style.setProperty('--bg1', colors[randomIndex].bg1);
+            document.documentElement.style.setProperty('--bg2', colors[randomIndex].bg2);
+            document.documentElement.style.setProperty('--btn1', colors[randomIndex].btn1);
+            document.documentElement.style.setProperty('--btn2', colors[randomIndex].btn2);
+            
+            // Setze LP Version für Tracking
+            document.getElementById('lp-version').value = (randomIndex + 1).toString();
+        }
+        
+        // Timer-Funktionalität
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                
+                display.textContent = minutes + ":" + seconds;
+                
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+        
+        // Beim Laden der Seite
+        window.onload = function () {
+            // Tracking-Parameter setzen
+            setTrackingParams();
+            
+            // Zufällige Inhalte laden
+            randomizeContent();
+            
+            // Timer starten (15 Minuten)
+            const fifteenMinutes = 60 * 15;
+            const display = document.querySelector('#countdown');
+            startTimer(fifteenMinutes, display);
+            
+            // Popup nach 5 Sekunden anzeigen
+            setTimeout(function() {
+                alert("⚠️ WARNING: This offer is time-sensitive! Only a few spots remain. Claim your access now before it's gone forever!");
+            }, 5000);
+        };
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$100/Day Secret REVEALED (Limited Time)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff3366;
+            --secondary: #2c3e50;
+            --accent: #ffcc00;
+            --dark: #1a1a1a;
+            --light: #ffffff;
+            --urgency: #ff0000;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(45deg, var(--bg1, #ff3366), var(--bg2, #2c3e50));
+            color: var(--light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            transition: all 0.8s ease;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        
         .urgency-bar {
             background: var(--urgency);
             color: white;
